@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://LongIslandWithoutIceTea.github.io/cs498rk_fp",
+  "homepage": "https://uss-illini.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },
