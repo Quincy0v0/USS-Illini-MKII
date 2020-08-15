@@ -1,0 +1,5 @@
+/backend/node_modules
+/backend/.DS_Store
+/backend/.nyc_output
+
+.DS_Store
