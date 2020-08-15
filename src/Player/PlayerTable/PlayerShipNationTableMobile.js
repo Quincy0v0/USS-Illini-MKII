@@ -346,6 +346,21 @@ export default class PlayerShipNationTableMobile extends Component {
         ave_damage_dealt: 0,
         ave_planes_killed: 0,
         count: 0,
+      },
+      europe: {
+        wins: 0,
+        battles: 0,
+        win_rate: 0,
+        survival_rate: 0,
+        max_xp: 0,
+        max_frags_battle: 0,
+        max_damage_dealt: 0,
+        max_planes_killed: 0,
+        ave_xp: 0,
+        ave_frags: 0,
+        ave_damage_dealt: 0,
+        ave_planes_killed: 0,
+        count: 0,
       }
     }
     this.props.data.forEach((row) => {
@@ -503,6 +518,20 @@ export default class PlayerShipNationTableMobile extends Component {
         data.pan_america.max_planes_killed = row.max_planes_killed > data.pan_america.max_planes_killed ? row.max_planes_killed : data.pan_america.max_planes_killed;
         data.pan_america.ave_planes_killed = division((row.ave_planes_killed + data.pan_america.ave_planes_killed * data.pan_america.count), (data.pan_america.count + 1))
         data.pan_america.count++;
+      } else if (row.nation === "europe") {
+        data.europe.max_damage_dealt = row.max_damage_dealt > data.europe.max_damage_dealt ? row.max_damage_dealt : data.europe.max_damage_dealt;
+        data.europe.max_frags_battle = row.max_frags_battle > data.europe.max_frags_battle ? row.max_frags_battle : data.europe.max_frags_battle;
+        data.europe.max_xp = row.max_xp > data.europe.max_xp ? row.max_xp : data.europe.max_xp;
+        data.europe.ave_xp = divisionWhole((row.ave_xp + data.europe.ave_xp * data.europe.count), (data.europe.count + 1))
+        data.europe.ave_damage_dealt = divisionWhole((row.ave_damage_dealt + data.europe.ave_damage_dealt * data.europe.count), (data.europe.count + 1))
+        data.europe.ave_frags = division((row.ave_frags + data.europe.ave_frags * data.europe.count), (data.europe.count + 1))
+        data.europe.battles += row.battles
+        data.europe.wins += row.wins
+        data.europe.win_rate = division(data.europe.wins, data.europe.battles);
+        data.europe.survival_rate = division((row.survival_rate + data.europe.survival_rate * data.europe.count), (data.europe.count + 1))
+        data.europe.max_planes_killed = row.max_planes_killed > data.europe.max_planes_killed ? row.max_planes_killed : data.europe.max_planes_killed;
+        data.europe.ave_planes_killed = division((row.ave_planes_killed + data.europe.ave_planes_killed * data.europe.count), (data.europe.count + 1))
+        data.europe.count++;
       }
     })
     var arr = [];

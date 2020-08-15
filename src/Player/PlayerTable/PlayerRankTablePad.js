@@ -26,7 +26,8 @@ const nationOptions = [
   { key: 'pan_asia', value: 'pan_asia', text: 'Pan Asia' },
   { key: 'italy', value: 'italy', text: 'Italy' },
   { key: 'commonwealth', value: 'commonwealth', text: 'Com. Wealth' },
-  { key: 'pan_america', value: 'pan_america', text: 'Pan America' }
+  { key: 'pan_america', value: 'pan_america', text: 'Pan America' },
+  { key: 'europe', value: 'europe', text: 'Europe' }
 ];
 
 const typeOptions = [
