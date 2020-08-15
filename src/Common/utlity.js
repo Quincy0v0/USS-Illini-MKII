@@ -13,7 +13,7 @@
 export const application_id = '0cd78ed96029eac1bcb73c22e7dd0456';
 
 // backend server base url (heroku)
-export const server = 'https://cs498rkfp.herokuapp.com/api';
+export const server = 'https://uss-illini-backend.herokuapp.com/api';
 
 // local server url
 // export const server = 'http://localhost:4000/api';
