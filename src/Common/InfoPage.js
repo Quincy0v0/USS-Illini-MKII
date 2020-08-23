@@ -51,7 +51,6 @@ class InfoPage extends Component {
     axios.get('https://api.worldofwarships.ru/wows/encyclopedia/ships/?application_id=' + application_id + '&language=en&limit=15&page_no='+ Math.ceil(Math.random()*10))
       .then((response) => {
         this.setState({ships: Object.values(response.data.data)})
-        console.log(this.state.ships)
       })
   }
 
@@ -80,7 +79,7 @@ class InfoPage extends Component {
     let minTierSprint = sprint && sprint.min_ship_tier;
 
     let shipGrid = this.state.ships && this.state.ships.map((ship, i) =>
-      <Grid.Column>
+      <Grid.Column key={i}>
         <Popup key={i} as='span' trigger={<Image as='span' src={ship.images.small}  />}>
           <Popup.Header>{ship.name}</Popup.Header>
           <Popup.Header>{ship.type}</Popup.Header>

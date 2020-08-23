@@ -51,7 +51,7 @@ class CWInfo extends Component {
   }
 
   render() {
-    let leagues = this.state.data && Object.values(this.state.data[this.state.currSeasonIdx].leagues).map((league, idx) => <div>
+    let leagues = this.state.data && Object.values(this.state.data[this.state.currSeasonIdx].leagues).map((league, idx) => <div key={idx}>
       <Image size='small' src={league.icon} avatar/>
       <Header as='h2' style={{color: league.color}}>{league.name}</Header>
     </div>);
