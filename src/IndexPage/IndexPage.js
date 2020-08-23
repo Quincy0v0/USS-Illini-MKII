@@ -55,7 +55,7 @@ class IndexPage extends Component {
         </div>
         <div className='verticalCenter'>
           <div className={(typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1) ? 'bg' : 'box-background'}>
-            <Header className='title' as='h1' style={{ marginTop: '75px' }}>
+            <Header inverted className='title' as='h1' style={{ marginTop: '75px' }}>
               <span>USS Illini MkII</span>
             </Header>
             <div>
