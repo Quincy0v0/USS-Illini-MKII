@@ -50,7 +50,7 @@ class RankInfo extends Component {
   }
 
   render() {
-    let images = this.state.data && Object.values(this.state.data[this.state.currSeasonIdx].images).map((img, idx) => <div style={{flex: '1 0 32%'}}>
+    let images = this.state.data && Object.values(this.state.data[this.state.currSeasonIdx].images).map((img, idx) => <div key={idx} style={{flex: '1 0 32%'}}>
       <Image src={img.insignia} avatar/>
       <span>Rank {idx+1}</span>
     </div>);
@@ -62,7 +62,7 @@ class RankInfo extends Component {
     let minTier = this.state.data && this.state.data[this.state.currSeasonIdx].min_ship_tier;
 
     let sprint = this.state.data && Object.values(this.state.data)[this.state.currSprintIdx];
-    let imagesSprint = sprint && Object.values(sprint.images).map((img, idx) => <div style={{flex: '1 0 32%'}}>
+    let imagesSprint = sprint && Object.values(sprint.images).map((img, idx) => <div key={idx} style={{flex: '1 0 32%'}}>
       <Image src={img.insignia} avatar/>
       <span>Rank {idx+1}</span>
     </div>);
