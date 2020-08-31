@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/USS-Illini-MKII/static/css/main.ca6ea1f6.chunk.css",
-    "main.js": "/USS-Illini-MKII/static/js/main.cbe34e69.chunk.js",
-    "main.js.map": "/USS-Illini-MKII/static/js/main.cbe34e69.chunk.js.map",
+    "main.js": "/USS-Illini-MKII/static/js/main.a9be1692.chunk.js",
+    "main.js.map": "/USS-Illini-MKII/static/js/main.a9be1692.chunk.js.map",
     "runtime-main.js": "/USS-Illini-MKII/static/js/runtime-main.bff08a56.js",
     "runtime-main.js.map": "/USS-Illini-MKII/static/js/runtime-main.bff08a56.js.map",
     "static/css/2.2dfcf771.chunk.css": "/USS-Illini-MKII/static/css/2.2dfcf771.chunk.css",
     "static/js/2.7c1f786c.chunk.js": "/USS-Illini-MKII/static/js/2.7c1f786c.chunk.js",
     "static/js/2.7c1f786c.chunk.js.map": "/USS-Illini-MKII/static/js/2.7c1f786c.chunk.js.map",
     "index.html": "/USS-Illini-MKII/index.html",
-    "precache-manifest.6ecdd3cd33ec1d8929523b5621f87641.js": "/USS-Illini-MKII/precache-manifest.6ecdd3cd33ec1d8929523b5621f87641.js",
+    "precache-manifest.9ee6f3fe5f61c7e79208fc1911d3e8fe.js": "/USS-Illini-MKII/precache-manifest.9ee6f3fe5f61c7e79208fc1911d3e8fe.js",
     "service-worker.js": "/USS-Illini-MKII/service-worker.js",
     "static/css/2.2dfcf771.chunk.css.map": "/USS-Illini-MKII/static/css/2.2dfcf771.chunk.css.map",
     "static/css/main.ca6ea1f6.chunk.css.map": "/USS-Illini-MKII/static/css/main.ca6ea1f6.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.2dfcf771.chunk.css",
     "static/js/2.7c1f786c.chunk.js",
     "static/css/main.ca6ea1f6.chunk.css",
-    "static/js/main.cbe34e69.chunk.js"
+    "static/js/main.a9be1692.chunk.js"
   ]
 }
