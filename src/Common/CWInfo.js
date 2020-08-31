@@ -46,7 +46,6 @@ class CWInfo extends Component {
         let sprintIdx = index.findIndex((x) => x === "101");
         this.setState({ currSeasonIdx: sprintIdx});
         this.setState({ currSprintIdx: index.length-1});
-        console.log(response.data.data, sprintIdx, index.length-1);
       });
   }
 

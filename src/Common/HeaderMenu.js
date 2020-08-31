@@ -253,13 +253,13 @@ class HeaderMenu extends Component {
             <Menu.Item as='a' active={this.state.mode === "home"} href='/'>
               <div style={{margin: "auto"}}><Icon name='home'/>Home</div>
             </Menu.Item>
-            <Menu.Item as='a' active={this.state.mode === "ship"} href='/#/ship'>
+            <Menu.Item as='a' active={this.state.mode === "ship"} href='/USS-Illini-MKII/#/ship'>
               <div style={{margin: "auto"}}><Icon name='anchor'/>Ship</div>
             </Menu.Item>
-            <Menu.Item as='a' active={this.state.mode === "player"} href='/#/player'>
+            <Menu.Item as='a' active={this.state.mode === "player"} href='/USS-Illini-MKII/#/player'>
               <div style={{margin: "auto"}}><Icon name='user'/>Player</div>
             </Menu.Item>
-            <Menu.Item as='a' active={this.state.mode === "clan"} href='/#/clan'>
+            <Menu.Item as='a' active={this.state.mode === "clan"} href='/USS-Illini-MKII/#/clan'>
               <div style={{margin: "auto"}}><Icon name='group'/>Clan</div>
             </Menu.Item>
             <Menu.Item position='right'>

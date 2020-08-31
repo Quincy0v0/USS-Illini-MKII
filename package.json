@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.1",
-    "gh-pages": "^2.1.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
@@ -24,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://uss-illini.herokuapp.com",
+  "homepage": "https://Quincy0v0.github.io/USS-Illini-MKII",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -33,5 +32,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
