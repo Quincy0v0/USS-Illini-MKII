@@ -250,7 +250,7 @@ class HeaderMenu extends Component {
       <div>
         <Menu inverted stackable size='large'>
           <Container fluid>
-            <Menu.Item as='a' active={this.state.mode === "home"} href='/'>
+            <Menu.Item as='a' active={this.state.mode === "home"} href='/#'>
               <div style={{margin: "auto"}}><Icon name='home'/>Home</div>
             </Menu.Item>
             <Menu.Item as='a' active={this.state.mode === "ship"} href='/USS-Illini-MKII/#/ship'>
