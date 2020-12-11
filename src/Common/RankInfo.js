@@ -5,6 +5,8 @@
  */
 import React, { Component } from 'react'
 import {
+    Message,
+    Loader,
   Button,
   Popup,
   Image,
@@ -33,20 +35,24 @@ class RankInfo extends Component {
       data: null,
       currSeasonIdx: 14,
       currSprintIdx: 14,
-      ships: null
+      ships: null,
+        data_error: false
     }
   }
 
   componentDidMount() {
     document.title = 'USS Illini mkII';
-    axios.get('https://api.worldofwarships.ru/wows/seasons/info/?application_id=' + application_id + '&language=en')
+    axios.get('https://api.worldofwarships.com/wows/seasons/info/?application_id=' + application_id + '&language=en')
       .then((response) => {
         this.setState({ data: response.data.data});
         let index = Object.keys(response.data.data);
         let sprintIdx = index.findIndex((x) => x === "101");
         this.setState({ currSeasonIdx: sprintIdx});
         this.setState({ currSprintIdx: index.length-1});
-      });
+      })
+        .catch(error => {
+            this.setState({ data_error: true});
+        });
   }
 
   render() {
@@ -73,6 +79,48 @@ class RankInfo extends Component {
     let maxTierSprint = sprint && sprint.max_ship_tier;
     let minTierSprint = sprint && sprint.min_ship_tier;
 
+    if (this.state.data == null && !this.state.data_error) {
+        return (<div>
+                <Divider horizontal
+                         style={{
+                             marginTop: '0em',
+                         }}>
+                    <Header as='h4'>
+                        <Icon name='bar chart' />
+                        Ranked Battle Summary
+                    </Header>
+                </Divider>
+                <Loader />
+            </div>
+        )
+    } else if (this.state.data_error) {
+        return (<div>
+            <Divider horizontal
+                     style={{
+                         marginTop: '0em',
+                     }}>
+                <Header as='h4'>
+                    <Icon name='bar chart' />
+                    Ranked Battle Summary
+                </Header>
+            </Divider>
+                <Container>
+                <Message warning>
+                    <Message.Header>Ranked battle not available</Message.Header>
+                    <p>
+                        The ranked battle summary is currently unavailable because the ranked season has ended. Stay tuned for the next season!
+                    </p>
+                </Message>
+                    <Message success>
+                        <Message.Header>Search a player's statistics</Message.Header>
+                        <p>
+                            Enter your in-game username in the searchbox and see your stats! (e.g. Quincy_0v0)
+                        </p>
+                    </Message>
+                    </Container>
+            </div>
+            )
+    } else {
     return (
       <div>
         <Divider horizontal
@@ -198,6 +246,7 @@ class RankInfo extends Component {
         <Container style={{padding: '3em'}}/>
       </div>
   );
+    }
   }
 }
 

@@ -39,14 +39,6 @@ class InfoPage extends Component {
 
   componentDidMount() {
     document.title = 'USS Illini mkII';
-    axios.get('https://api.worldofwarships.ru/wows/seasons/info/?application_id=' + application_id + '&language=en')
-      .then((response) => {
-        this.setState({ data: response.data.data});
-        let index = Object.keys(response.data.data);
-        let sprintIdx = index.findIndex((x) => x === "101");
-        this.setState({ currSeasonIdx: sprintIdx});
-        this.setState({ currSprintIdx: index.length-1});
-      });
 
     axios.get('https://api.worldofwarships.ru/wows/encyclopedia/ships/?application_id=' + application_id + '&language=en&limit=15&page_no='+ Math.ceil(Math.random()*10))
       .then((response) => {
