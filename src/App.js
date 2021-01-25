@@ -30,7 +30,6 @@ class App extends Component {
                         component={() => <Register/>}  />
                   <Route path={"/user"} exact
                         component={() => <UserIndex/>}  />
-
               </div>
           </Router>
       </div>

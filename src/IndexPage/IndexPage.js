@@ -47,10 +47,9 @@ class IndexPage extends Component {
     return (
       <div>
         <div className='video-background'>
+          <Image src='https://wallpapercave.com/wp/wp2012308.jpg' fluid/>
           <div className='video-foreground'>
-            <iframe src='https://youtube.com/embed/FInMVT4vL5M?playlist=FInMVT4vL5M&autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1' frameBorder='0' allowFullScreen
-              style={{ display: (typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1) ? 'none' : 'block' }}
-            />
+            // add video here
           </div>
         </div>
         <div className='verticalCenter'>
