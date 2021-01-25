@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/USS-Illini-MKII/precache-manifest.f58666b45af86d61da419a1614b49874.js"
+  "/USS-Illini-MKII/precache-manifest.933c88db0b55204f19f1006ef9835bd8.js"
 );
 
 self.addEventListener('message', (event) => {

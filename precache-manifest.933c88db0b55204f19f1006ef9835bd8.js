@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff10ede34c327267b4d60258d72f53d9",
+    "revision": "40ba5f6e6b4fee808ca4ab8ea6c0558c",
     "url": "/USS-Illini-MKII/index.html"
   },
   {
-    "revision": "dc6e8a7c1ab280ff2357",
+    "revision": "a7117933d5c711fd379a",
     "url": "/USS-Illini-MKII/static/css/2.2dfcf771.chunk.css"
   },
   {
-    "revision": "97d27bd203f55be073a7",
+    "revision": "92b416445097a3e4d7f8",
     "url": "/USS-Illini-MKII/static/css/main.ca6ea1f6.chunk.css"
   },
   {
-    "revision": "dc6e8a7c1ab280ff2357",
-    "url": "/USS-Illini-MKII/static/js/2.7c1f786c.chunk.js"
+    "revision": "a7117933d5c711fd379a",
+    "url": "/USS-Illini-MKII/static/js/2.a53c6a63.chunk.js"
   },
   {
-    "revision": "97d27bd203f55be073a7",
-    "url": "/USS-Illini-MKII/static/js/main.ac229dce.chunk.js"
+    "revision": "92b416445097a3e4d7f8",
+    "url": "/USS-Illini-MKII/static/js/main.d8790959.chunk.js"
   },
   {
     "revision": "aacd28e6c6ac3034018b",
