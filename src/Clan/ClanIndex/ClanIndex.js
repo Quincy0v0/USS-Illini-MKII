@@ -1,4 +1,4 @@
-/**
+ /**
  * @fileoverview
  * Defining ClanIndex class
  * @exports ClanIndex
@@ -16,6 +16,7 @@ import { NavLink } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import ToTopButton from '../../Common/ToTopButton.js';
 import axios from 'axios';
+import Moment from 'react-moment';
 import { division, divisionWhole, time, application_id } from '../../Common/utlity.js';
 
 /**
@@ -25,7 +26,7 @@ import { division, divisionWhole, time, application_id } from '../../Common/utli
 export default class ClanIndex extends Component {
   /**
    * Constructor
-   * @param {*} props 
+   * @param {*} props
    */
   constructor(props) {
     super(props);
@@ -73,7 +74,7 @@ export default class ClanIndex extends Component {
 
   /**
    * Making api calls to retrieve data of a clan given a clan id
-   * @param {*} clan_id 6-digit distinct numeric id for clans 
+   * @param {*} clan_id 6-digit distinct numeric id for clans
    */
   reloadData(clan_id) {
     axios.get('https://api.worldofwarships.com/wows/clans/info/?application_id=' + application_id + '&clan_id=' + clan_id)
@@ -130,8 +131,10 @@ export default class ClanIndex extends Component {
    */
   buildMembers() {
     let arr = [];
+    Moment.globalFormat = 'D MMM YYYY';
     this.state.playerlist.forEach((row) => {
       if (row.statistics) {
+        console.log(row)
         arr.push(
           (
             <div key={row.nickname}>
@@ -175,6 +178,10 @@ export default class ClanIndex extends Component {
                   <Statistic horizontal size='small'>
                     <Statistic.Value>{divisionWhole(row.statistics.pvp.damage_dealt, row.statistics.pvp.wins + row.statistics.pvp.draws + row.statistics.pvp.losses).toLocaleString()}</Statistic.Value>
                     <Statistic.Label>Average Damage</Statistic.Label>
+                  </Statistic>
+                  <Statistic horizontal size='small'>
+                    <Statistic.Value><Moment unix>{row.last_battle_time}</Moment></Statistic.Value>
+                    <Statistic.Label>Last Battle Time</Statistic.Label>
                   </Statistic>
                 </div>
               </div>
