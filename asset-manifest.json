@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/WarshipsInfo/static/css/main.b7618801.chunk.css",
-    "main.js": "/WarshipsInfo/static/js/main.b71d087c.chunk.js",
-    "main.js.map": "/WarshipsInfo/static/js/main.b71d087c.chunk.js.map",
-    "runtime-main.js": "/WarshipsInfo/static/js/runtime-main.52d25b02.js",
-    "runtime-main.js.map": "/WarshipsInfo/static/js/runtime-main.52d25b02.js.map",
-    "static/css/2.efa2f871.chunk.css": "/WarshipsInfo/static/css/2.efa2f871.chunk.css",
-    "static/js/2.110134f8.chunk.js": "/WarshipsInfo/static/js/2.110134f8.chunk.js",
-    "static/js/2.110134f8.chunk.js.map": "/WarshipsInfo/static/js/2.110134f8.chunk.js.map",
-    "index.html": "/WarshipsInfo/index.html",
-    "precache-manifest.59b9854f674306bb796fd00ab63d80dc.js": "/WarshipsInfo/precache-manifest.59b9854f674306bb796fd00ab63d80dc.js",
-    "service-worker.js": "/WarshipsInfo/service-worker.js",
-    "static/css/2.efa2f871.chunk.css.map": "/WarshipsInfo/static/css/2.efa2f871.chunk.css.map",
-    "static/css/main.b7618801.chunk.css.map": "/WarshipsInfo/static/css/main.b7618801.chunk.css.map",
-    "static/media/index.scss": "/WarshipsInfo/static/media/background.0d05ea53.jpg",
-    "static/media/semantic.min.css": "/WarshipsInfo/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/USS-Illini-MKII/static/css/main.ca6ea1f6.chunk.css",
+    "main.js": "/USS-Illini-MKII/static/js/main.7e7ad088.chunk.js",
+    "main.js.map": "/USS-Illini-MKII/static/js/main.7e7ad088.chunk.js.map",
+    "runtime-main.js": "/USS-Illini-MKII/static/js/runtime-main.bff08a56.js",
+    "runtime-main.js.map": "/USS-Illini-MKII/static/js/runtime-main.bff08a56.js.map",
+    "static/css/2.2dfcf771.chunk.css": "/USS-Illini-MKII/static/css/2.2dfcf771.chunk.css",
+    "static/js/2.110134f8.chunk.js": "/USS-Illini-MKII/static/js/2.110134f8.chunk.js",
+    "static/js/2.110134f8.chunk.js.map": "/USS-Illini-MKII/static/js/2.110134f8.chunk.js.map",
+    "index.html": "/USS-Illini-MKII/index.html",
+    "precache-manifest.124661cfb93ece330090ce59256fa045.js": "/USS-Illini-MKII/precache-manifest.124661cfb93ece330090ce59256fa045.js",
+    "service-worker.js": "/USS-Illini-MKII/service-worker.js",
+    "static/css/2.2dfcf771.chunk.css.map": "/USS-Illini-MKII/static/css/2.2dfcf771.chunk.css.map",
+    "static/css/main.ca6ea1f6.chunk.css.map": "/USS-Illini-MKII/static/css/main.ca6ea1f6.chunk.css.map",
+    "static/media/index.scss": "/USS-Illini-MKII/static/media/background.0d05ea53.jpg",
+    "static/media/semantic.min.css": "/USS-Illini-MKII/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.52d25b02.js",
-    "static/css/2.efa2f871.chunk.css",
+    "static/js/runtime-main.bff08a56.js",
+    "static/css/2.2dfcf771.chunk.css",
     "static/js/2.110134f8.chunk.js",
-    "static/css/main.b7618801.chunk.css",
-    "static/js/main.b71d087c.chunk.js"
+    "static/css/main.ca6ea1f6.chunk.css",
+    "static/js/main.7e7ad088.chunk.js"
   ]
 }
