@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/WarshipInfo/static/css/main.a202e2f4.chunk.css",
-    "main.js": "/WarshipInfo/static/js/main.cf17ab30.chunk.js",
-    "main.js.map": "/WarshipInfo/static/js/main.cf17ab30.chunk.js.map",
-    "runtime-main.js": "/WarshipInfo/static/js/runtime-main.281aab42.js",
-    "runtime-main.js.map": "/WarshipInfo/static/js/runtime-main.281aab42.js.map",
-    "static/css/2.64e00553.chunk.css": "/WarshipInfo/static/css/2.64e00553.chunk.css",
-    "static/js/2.110134f8.chunk.js": "/WarshipInfo/static/js/2.110134f8.chunk.js",
-    "static/js/2.110134f8.chunk.js.map": "/WarshipInfo/static/js/2.110134f8.chunk.js.map",
-    "index.html": "/WarshipInfo/index.html",
-    "precache-manifest.58d64359afeb3eca17fc70a89beada5b.js": "/WarshipInfo/precache-manifest.58d64359afeb3eca17fc70a89beada5b.js",
-    "service-worker.js": "/WarshipInfo/service-worker.js",
-    "static/css/2.64e00553.chunk.css.map": "/WarshipInfo/static/css/2.64e00553.chunk.css.map",
-    "static/css/main.a202e2f4.chunk.css.map": "/WarshipInfo/static/css/main.a202e2f4.chunk.css.map",
-    "static/media/index.scss": "/WarshipInfo/static/media/background.0d05ea53.jpg",
-    "static/media/semantic.min.css": "/WarshipInfo/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/WarshipsInfo/static/css/main.b7618801.chunk.css",
+    "main.js": "/WarshipsInfo/static/js/main.b71d087c.chunk.js",
+    "main.js.map": "/WarshipsInfo/static/js/main.b71d087c.chunk.js.map",
+    "runtime-main.js": "/WarshipsInfo/static/js/runtime-main.52d25b02.js",
+    "runtime-main.js.map": "/WarshipsInfo/static/js/runtime-main.52d25b02.js.map",
+    "static/css/2.efa2f871.chunk.css": "/WarshipsInfo/static/css/2.efa2f871.chunk.css",
+    "static/js/2.110134f8.chunk.js": "/WarshipsInfo/static/js/2.110134f8.chunk.js",
+    "static/js/2.110134f8.chunk.js.map": "/WarshipsInfo/static/js/2.110134f8.chunk.js.map",
+    "index.html": "/WarshipsInfo/index.html",
+    "precache-manifest.59b9854f674306bb796fd00ab63d80dc.js": "/WarshipsInfo/precache-manifest.59b9854f674306bb796fd00ab63d80dc.js",
+    "service-worker.js": "/WarshipsInfo/service-worker.js",
+    "static/css/2.efa2f871.chunk.css.map": "/WarshipsInfo/static/css/2.efa2f871.chunk.css.map",
+    "static/css/main.b7618801.chunk.css.map": "/WarshipsInfo/static/css/main.b7618801.chunk.css.map",
+    "static/media/index.scss": "/WarshipsInfo/static/media/background.0d05ea53.jpg",
+    "static/media/semantic.min.css": "/WarshipsInfo/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.281aab42.js",
-    "static/css/2.64e00553.chunk.css",
+    "static/js/runtime-main.52d25b02.js",
+    "static/css/2.efa2f871.chunk.css",
     "static/js/2.110134f8.chunk.js",
-    "static/css/main.a202e2f4.chunk.css",
-    "static/js/main.cf17ab30.chunk.js"
+    "static/css/main.b7618801.chunk.css",
+    "static/js/main.b71d087c.chunk.js"
   ]
 }
