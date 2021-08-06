@@ -26,7 +26,7 @@ import { application_id } from '../Common/utlity.js';
 class IndexPage extends Component {
   /**
    * Constructor
-   * @param {*} props 
+   * @param {*} props
    */
   constructor(props) {
     super(props);
@@ -36,7 +36,7 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-    document.title = 'USS Illini mkII';
+    document.title = 'Warships Info';
     axios.get('https://api.worldofwarships.ru/wows/encyclopedia/info/?application_id=' + application_id + '&language=en&fields=game_version')
       .then((response) => {
         this.setState({ version: response.data.data.game_version })
@@ -55,7 +55,7 @@ class IndexPage extends Component {
         <div className='verticalCenter'>
           <div className={(typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1) ? 'bg' : 'box-background'}>
             <Header inverted className='title' as='h1' style={{ marginTop: '75px' }}>
-              <span>USS Illini MkII</span>
+              <span>Warships Info</span>
             </Header>
             <div>
               <Image src={goodlogo} size='medium' verticalAlign='middle' />
